@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Login Web</title>
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="flip-container" class="flip-container">
+        <div class="flipper">
+            <!-- FRONT FACE: LOGIN FORM -->
+            <div class="front">
+                <div class="form-content">
+                    <h1>Log In</h1>
+                    <p>Acess your amazing personalised dashboard</p>
+
+                    <form id="login-form">
+                        <!-- Email Input -->
+                        <div class="input-group">
+                            <i data-lucide="mail"></i>
+                            <input type="email" placeholder="Email Address" required class="form-input">
+                        </div>
+
+                        <!-- Password Input -->
+                        <div class="input-group">
+                            <i data-lucide="key"></i>
+                            <input type="password" placeholder="Password" required class="form-input">
+                        </div>
+
+                        <button type="submit" class="btn-primary">
+                            Secure Log In
+                        </button>
+                    </form>
+                    <div id="login-message" class="form-message"></div>
+
+                    <div class="swtich-prompt">
+                        New User?
+                        <button id="switchToSignUp" class="switch-button">
+                            Create an Account
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back Face: Sign Up Form -->
+            <div class="back">
+                <div class="form-content">
+                    <h1>Sign Up</h1>
+                    <p>Join us and start your journey today!</p>
+
+                    <form id="siginup-form">
+                        <!-- Name Input -->
+                        <div class="input-group">
+                            <i data-lucide="user-plus"></i>
+                            <input type="text" placeholder="Full Name" required class="form-input">
+                        </div>
+
+                        <!-- Emial Input -->
+                         <div class="input-group">
+                            <i data-lucide="mail"></i>
+                            <input type="email" placeholder="Email Address" required class="form-input">
+                         </div>
+
+                         <!-- Password -->
+                          <div class="input-group">
+                            <i data-lucide="lock"></i>
+                            <input type="password" placeholder="Create Password" required class="form-input">
+                          </div>
+
+                          <button type="submit" class="btn-primary">
+                            Register Now
+                          </button>
+
+                          <div id="signup-message" class="form-message"></div>
+
+                          <div class="switch-prompt">
+                            Already have on account?
+                            <button id="switchToLogin" class="switch-button">
+                                Log In Here
+                            </button>
+                          </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
